@@ -23,22 +23,23 @@ Partial Class FormInicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.TextBoxUsuario = New System.Windows.Forms.TextBox()
+        Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBoxContrasena = New System.Windows.Forms.TextBox()
-        Me.ButtonIniciar = New System.Windows.Forms.Button()
-        Me.ButtonRegistrarse = New System.Windows.Forms.Button()
-        Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
-        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.btnIniciar = New System.Windows.Forms.Button()
+        Me.btnRegistrarse = New System.Windows.Forms.Button()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBoxUsuario
+        'txtUsuario
         '
-        Me.TextBoxUsuario.Location = New System.Drawing.Point(133, 55)
-        Me.TextBoxUsuario.Name = "TextBoxUsuario"
-        Me.TextBoxUsuario.Size = New System.Drawing.Size(139, 20)
-        Me.TextBoxUsuario.TabIndex = 0
+        Me.txtUsuario.Location = New System.Drawing.Point(133, 55)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(139, 20)
+        Me.txtUsuario.TabIndex = 0
         '
         'Label1
         '
@@ -58,59 +59,74 @@ Partial Class FormInicio
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Contraseña"
         '
-        'TextBoxContrasena
+        'txtPassword
         '
-        Me.TextBoxContrasena.Location = New System.Drawing.Point(133, 81)
-        Me.TextBoxContrasena.Name = "TextBoxContrasena"
-        Me.TextBoxContrasena.Size = New System.Drawing.Size(139, 20)
-        Me.TextBoxContrasena.TabIndex = 3
+        Me.txtPassword.Location = New System.Drawing.Point(133, 81)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(139, 20)
+        Me.txtPassword.TabIndex = 3
         '
-        'ButtonIniciar
+        'btnIniciar
         '
-        Me.ButtonIniciar.Location = New System.Drawing.Point(145, 116)
-        Me.ButtonIniciar.Name = "ButtonIniciar"
-        Me.ButtonIniciar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonIniciar.TabIndex = 4
-        Me.ButtonIniciar.Text = "Iniciar"
-        Me.ButtonIniciar.UseVisualStyleBackColor = True
+        Me.btnIniciar.Location = New System.Drawing.Point(141, 116)
+        Me.btnIniciar.Name = "btnIniciar"
+        Me.btnIniciar.Size = New System.Drawing.Size(75, 23)
+        Me.btnIniciar.TabIndex = 4
+        Me.btnIniciar.Text = "Iniciar"
+        Me.btnIniciar.UseVisualStyleBackColor = True
         '
-        'ButtonRegistrarse
+        'btnRegistrarse
         '
-        Me.ButtonRegistrarse.Location = New System.Drawing.Point(145, 145)
-        Me.ButtonRegistrarse.Name = "ButtonRegistrarse"
-        Me.ButtonRegistrarse.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonRegistrarse.TabIndex = 5
-        Me.ButtonRegistrarse.Text = "Registrarse"
-        Me.ButtonRegistrarse.UseVisualStyleBackColor = True
+        Me.btnRegistrarse.Location = New System.Drawing.Point(141, 145)
+        Me.btnRegistrarse.Name = "btnRegistrarse"
+        Me.btnRegistrarse.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegistrarse.TabIndex = 5
+        Me.btnRegistrarse.Text = "Registrarse"
+        Me.btnRegistrarse.UseVisualStyleBackColor = True
         '
-        'ErrorProvider
+        'ErrorProvider1
         '
-        Me.ErrorProvider.ContainerControl = Me
+        Me.ErrorProvider1.ContainerControl = Me
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(2, 190)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(21, 23)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "!"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'FormInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(359, 214)
-        Me.Controls.Add(Me.ButtonRegistrarse)
-        Me.Controls.Add(Me.ButtonIniciar)
-        Me.Controls.Add(Me.TextBoxContrasena)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnRegistrarse)
+        Me.Controls.Add(Me.btnIniciar)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBoxUsuario)
+        Me.Controls.Add(Me.txtUsuario)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormInicio"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
-        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TextBoxUsuario As TextBox
+    Friend WithEvents txtUsuario As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBoxContrasena As TextBox
-    Friend WithEvents ButtonIniciar As Button
-    Friend WithEvents ButtonRegistrarse As Button
-    Friend WithEvents ErrorProvider As ErrorProvider
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents btnIniciar As Button
+    Friend WithEvents btnRegistrarse As Button
+    Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents Button1 As Button
 End Class
